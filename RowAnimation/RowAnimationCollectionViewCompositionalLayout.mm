@@ -100,4 +100,10 @@
     return result;
 }
 
+- (id) _propertyAnimatorForCollectionViewUpdates:(id)arg1 withCustomAnimator:(id)arg2 {
+    UIViewPropertyAnimator *animator = [[UIViewPropertyAnimator alloc] initWithDuration:2.f curve:UIViewAnimationCurveEaseInOut animations:nil];
+    
+    return [animator autorelease];
+}
+
 @end
